@@ -186,3 +186,62 @@
 .citation-number {
   color: var(--global-theme-color);
 }
+/* --- Publication list closer to bibliography style --- */
+
+.publications {
+  .bibliography li {
+    margin-bottom: 1.4rem;
+    padding-bottom: 1.1rem;
+    border-bottom: 1px solid var(--global-divider-color);
+  }
+
+  .bibliography li:last-child {
+    border-bottom: none;
+  }
+
+  .title {
+    font-weight: 500;
+    font-size: 1.03rem;
+    line-height: 1.45;
+  }
+
+  .author,
+  .periodical,
+  .venue,
+  .links,
+  .award {
+    font-size: 0.96rem;
+  }
+
+  .periodical,
+  .venue {
+    color: var(--global-text-color-light);
+    font-style: italic;
+  }
+
+  .abbr {
+    opacity: 0.8;
+  }
+
+  .links a.btn,
+  .links .btn {
+    background: transparent !important;
+    border: 1px solid var(--global-divider-color) !important;
+    color: var(--global-text-color-light) !important;
+    padding: 0.12rem 0.45rem !important;
+    font-size: 0.82rem !important;
+    box-shadow: none !important;
+  }
+
+  .links a.btn:hover,
+  .links .btn:hover {
+    color: var(--global-theme-color) !important;
+    border-color: var(--global-theme-color) !important;
+  }
+
+  img,
+  .preview,
+  .teaser {
+    border-radius: 4px;
+  }
+}

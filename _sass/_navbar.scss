@@ -188,3 +188,38 @@
     color: var(--global-hover-color);
   }
 }
+/* --- Lighter navbar --- */
+
+.navbar {
+  background-color: rgba(248, 246, 241, 0.88) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--global-divider-color);
+  box-shadow: none !important;
+}
+
+html[data-theme="dark"] .navbar {
+  background-color: rgba(23, 23, 21, 0.88) !important;
+}
+
+.navbar-brand {
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.navbar .nav-link {
+  font-size: 0.98rem;
+  font-weight: 400;
+  color: var(--global-text-color-light) !important;
+  padding-left: 0.55rem !important;
+  padding-right: 0.55rem !important;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: var(--global-theme-color) !important;
+}
+
+.navbar-nav {
+  gap: 0.1rem;
+}

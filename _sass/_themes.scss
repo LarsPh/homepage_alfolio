@@ -206,3 +206,96 @@ html[data-theme-setting="light"] {
 #light-toggle:hover .fa-half-sun-moon::after {
   color: var(--global-theme-color);
 }
+// --- Light Tufte-like override ---
+:root {
+  --global-bg-color: #f8f6f1;
+  --global-code-bg-color: #f2efe8;
+  --global-text-color: #1f1f1b;
+  --global-text-color-light: #5f5a52;
+  --global-theme-color: #5c4a3d;   // muted warm brown
+  --global-hover-color: #3f332a;
+  --global-divider-color: #d8d1c6;
+  --global-card-bg-color: #fbfaf7;
+  --global-footer-bg-color: #f4f1eb;
+}
+
+html[data-theme="dark"] {
+  --global-bg-color: #171715;
+  --global-code-bg-color: #20201d;
+  --global-text-color: #e8e2d8;
+  --global-text-color-light: #b9b2a7;
+  --global-theme-color: #c7a98b;
+  --global-hover-color: #e3c6a9;
+  --global-divider-color: #3a3935;
+  --global-card-bg-color: #1c1c19;
+  --global-footer-bg-color: #141412;
+}
+
+/* --- Light Tufte-like typography --- */
+
+body {
+  font-family: Georgia, "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Palatino, "Noto Serif", serif;
+  font-size: 1.06rem;
+  line-height: 1.78;
+  letter-spacing: 0.003em;
+  color: var(--global-text-color);
+}
+
+p,
+li {
+  line-height: 1.78;
+}
+
+.container,
+.container mt-5,
+.post,
+.post-content,
+.cv {
+  line-height: 1.75;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+  margin-top: 2rem;
+  margin-bottom: 0.8rem;
+}
+
+h1 {
+  font-size: 2.25rem;
+}
+
+h2 {
+  font-size: 1.65rem;
+  margin-top: 2.4rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: var(--global-theme-color);
+}
+
+a:hover {
+  color: var(--global-hover-color);
+  text-decoration: underline;
+  text-underline-offset: 0.12em;
+}
+
+blockquote {
+  border-left: 2px solid var(--global-divider-color);
+  padding-left: 1rem;
+  color: var(--global-text-color-light);
+  font-style: italic;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--global-divider-color);
+  margin: 2rem 0;
+}
