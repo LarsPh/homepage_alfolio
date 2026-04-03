@@ -289,3 +289,19 @@ ul.task-list input[type="checkbox"] {
   letter-spacing: 0.004em;
   line-height: 1.2;
 }
+
+.cv .card-title,
+.cv .card-title.font-weight-medium {
+  font-family: "Gill Sans", "Gill Sans MT", "Lato", "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 400 !important;
+  letter-spacing: 0.006em;
+  line-height: 1.2;
+}
+
+.cv h6.title,
+.cv h6.title.font-weight-bold {
+  font-family: "Gill Sans", "Gill Sans MT", "Lato", "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 500 !important;
+  letter-spacing: 0.004em;
+  line-height: 1.22;
+}

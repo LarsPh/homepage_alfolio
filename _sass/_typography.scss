@@ -168,26 +168,31 @@ h2, h3 {
 }
 
 /* Inline links in body text: clearer but still restrained */
-p a,
-li a,
-.about a,
-.post a,
-.post-content a,
-.cv a {
+.post p a,
+.post li a,
+.post-content p a,
+.post-content li a,
+.cv p a,
+.cv li a {
   color: #6f4a35;
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 0.12em;
-  text-decoration-color: rgba(111, 74, 53, 0.55);
+  text-decoration-line: underline !important;
+  text-decoration-thickness: 1.25px;
+  text-underline-offset: 0.14em;
+  text-decoration-color: rgba(111, 74, 53, 0.75);
 }
 
-p a:hover,
-li a:hover,
-.about a:hover,
-.post a:hover,
-.post-content a:hover,
-.cv a:hover {
+.post p a:hover,
+.post li a:hover,
+.post-content p a:hover,
+.post-content li a:hover,
+.cv p a:hover,
+.cv li a:hover {
   color: #4f3426;
-  text-decoration-thickness: 1.5px;
-  text-decoration-color: rgba(79, 52, 38, 0.75);
+  text-decoration-thickness: 1.6px;
+  text-decoration-color: rgba(79, 52, 38, 0.9);
+}
+
+.post-title .font-weight-bold,
+.page-title .font-weight-bold {
+  font-weight: 500 !important;
 }
