@@ -68,7 +68,7 @@ cv:
           - Contributed practical modeling and analysis pipelines for facial appearance research.
 
     Publications:
-      - title: AvatarMix: Identity-Preserving Cross-Avatar Composition for Outfit Personalization
+      - title: "AvatarMix: Identity-Preserving Cross-Avatar Composition for Outfit Personalization"
         authors:
           - Zhaorong Wang
           - Yoshihiro Kanamori
@@ -77,7 +77,7 @@ cv:
         releaseDate: 2026
         summary: Identity-preserving cross-avatar composition for outfit personalization with digital human avatars.
 
-      - title: EG-HumanNeRF: Efficient Generalizable Human NeRF Utilizing Human Prior for Sparse View
+      - title: "EG-HumanNeRF: Efficient Generalizable Human NeRF Utilizing Human Prior for Sparse View"
         authors:
           - Zhaorong Wang
           - Yoshihiro Kanamori
