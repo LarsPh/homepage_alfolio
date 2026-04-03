@@ -36,4 +36,4 @@ More broadly, I am interested in research problems at the intersection of **comp
 
 I hold **JLPT N1** in Japanese and am comfortable communicating in both English and Japanese in research settings.
 
-Please see my [publications](/publications/), [projects](/projects/), and [CV](/cv/) for more details.
+Please see my [publications]({{ '/publications/' | relative_url }}), [projects]({{ '/projects/' | relative_url }}), and [CV]({{ '/cv/' | relative_url }}) for more details.

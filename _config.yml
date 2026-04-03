@@ -6,10 +6,7 @@ first_name: Zhaorong
 middle_name:
 last_name: Wang
 
-contact_note: >
-  Ph.D. student in Computer Science at the University of Tsukuba.
-  I work on computer graphics, digital humans, novel view synthesis,
-  and 3D Gaussian Splatting.
+contact_note:
 
 description: >
   Personal website of Zhaorong Wang, a Ph.D. student at the University of Tsukuba.
