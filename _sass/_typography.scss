@@ -140,25 +140,54 @@ blockquote {
 $zw-body-serif: "Noto Serif", Georgia, "Times New Roman", serif;
 $zw-heading-sans: "Gill Sans", "Gill Sans MT", "Lato", "Avenir Next", "Helvetica Neue", Arial, sans-serif;
 
-/* 2. Body text */
 body {
   font-family: $zw-body-serif;
   line-height: 1.72;
   letter-spacing: 0.002em;
 }
 
-/* 3. Headings: lighter, more editorial */
-h1, h2, h3, h4, h5, h6 {
-  font-family: $zw-heading-sans;
-  font-weight: 400;
-  letter-spacing: 0.01em;
-  line-height: 1.2;
-}
-
-/* Optional: make page titles a bit calmer */
+/* Global headings: lighter and calmer */
+h1, h2, h3, h4, h5, h6,
 .post-title,
 .page-title {
   font-family: $zw-heading-sans;
-  font-weight: 400;
-  letter-spacing: 0.01em;
+  font-weight: 400 !important;
+  letter-spacing: 0.005em;
+  line-height: 1.18;
+}
+
+/* Make big headings a bit less aggressive */
+h1,
+.post-title,
+.page-title {
+  font-weight: 400 !important;
+}
+
+h2, h3 {
+  font-weight: 400 !important;
+}
+
+/* Inline links in body text: clearer but still restrained */
+p a,
+li a,
+.about a,
+.post a,
+.post-content a,
+.cv a {
+  color: #6f4a35;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.12em;
+  text-decoration-color: rgba(111, 74, 53, 0.55);
+}
+
+p a:hover,
+li a:hover,
+.about a:hover,
+.post a:hover,
+.post-content a:hover,
+.cv a:hover {
+  color: #4f3426;
+  text-decoration-thickness: 1.5px;
+  text-decoration-color: rgba(79, 52, 38, 0.75);
 }

@@ -203,13 +203,16 @@ html[data-theme="dark"] .navbar {
 }
 
 .navbar-brand {
-  font-weight: 600;
-  letter-spacing: -0.01em;
+  font-family: "Gill Sans", "Gill Sans MT", "Lato", "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 500 !important;
+  letter-spacing: 0.008em;
 }
 
 .navbar .nav-link {
+  font-family: "Gill Sans", "Gill Sans MT", "Lato", "Avenir Next", "Helvetica Neue", Arial, sans-serif;
   font-size: 0.98rem;
-  font-weight: 400;
+  font-weight: 400 !important;
+  letter-spacing: 0.03em;
   color: var(--global-text-color-light) !important;
   padding-left: 0.55rem !important;
   padding-right: 0.55rem !important;
@@ -222,18 +225,4 @@ html[data-theme="dark"] .navbar {
 
 .navbar-nav {
   gap: 0.1rem;
-}
-
-/* --- Navbar font unification --- */
-
-.navbar-brand,
-.navbar .nav-link {
-  font-family: "Gill Sans", "Gill Sans MT", "Lato", "Avenir Next", "Helvetica Neue", Arial, sans-serif;
-  font-weight: 400;
-  letter-spacing: 0.04em;
-}
-
-.navbar-brand {
-  font-weight: 600;
-  letter-spacing: 0.01em;
 }
