@@ -39,7 +39,7 @@ ninja.data = [{
           },
         },{id: "nav-cv",
           title: "cv",
-          description: "One-page résumé.",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/homepage_alfolio/cv/";
