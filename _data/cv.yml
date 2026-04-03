@@ -90,10 +90,7 @@ cv:
         keywords:
           - Python
           - C++
-          - SQL
-          - Java
-          - Bash
-          - Fish shell
+          - Bash, Fish shell
 
       - name: ML / Graphics
         keywords:

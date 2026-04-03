@@ -226,3 +226,14 @@ html[data-theme="dark"] .navbar {
 .navbar-nav {
   gap: 0.1rem;
 }
+
+.navbar-brand {
+  font-family: "Gill Sans", "Gill Sans MT", "Lato", "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 400 !important;
+  letter-spacing: 0.006em;
+}
+
+.navbar-brand .font-weight-bold,
+.navbar-brand strong {
+  font-weight: 500 !important;
+}
