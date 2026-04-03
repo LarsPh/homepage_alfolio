@@ -66,7 +66,7 @@ cv:
           - Contributed to a product-oriented face rendering and inverse rendering research effort, focusing on practical modeling and analysis pipelines for facial appearance.
 
     publications:
-      - title: AvatarMix: Identity-Preserving Cross-Avatar Composition for Outfit Personalization
+      - title: "AvatarMix: Identity-Preserving Cross-Avatar Composition for Outfit Personalization"
         authors:
           - "**Zhaorong Wang**"
           - Yoshihiro Kanamori
@@ -74,7 +74,7 @@ cv:
         journal: CVPR 2026 Findings
         date: 2026
 
-      - title: EG-HumanNeRF: Efficient Generalizable Human NeRF Utilizing Human Prior for Sparse View
+      - title: "EG-HumanNeRF: Efficient Generalizable Human NeRF Utilizing Human Prior for Sparse View"
         authors:
           - "**Zhaorong Wang**"
           - Yoshihiro Kanamori
