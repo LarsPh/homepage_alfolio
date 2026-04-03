@@ -276,3 +276,15 @@ ul.task-list input[type="checkbox"] {
     }
   }
 }
+
+
+/* --- Project / card title font unification --- */
+
+.card-title,
+.card .card-title,
+.projects .card-title {
+  font-family: "Gill Sans", "Gill Sans MT", "Lato", "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  line-height: 1.2;
+}

@@ -245,3 +245,18 @@
     border-radius: 4px;
   }
 }
+
+/* --- Publication title font unification --- */
+
+.publications .title {
+  font-family: "Gill Sans", "Gill Sans MT", "Lato", "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+}
+
+.publications .author,
+.publications .periodical,
+.publications .venue {
+  font-family: "Noto Serif", Georgia, "Times New Roman", serif;
+}

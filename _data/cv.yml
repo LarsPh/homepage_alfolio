@@ -18,8 +18,6 @@ cv:
         studyType: Ph.D.
         start_date: 2024-04
         end_date: 2027-03
-        highlights:
-          - Research focus: computer graphics, digital humans, novel view synthesis, and 3D Gaussian Splatting.
 
       - institution: University of Tsukuba
         location: Tsukuba, Japan
@@ -86,26 +84,46 @@ cv:
         releaseDate: 2026
         url: https://doi.org/10.26599/CVM.2025.9450508
         summary: A generalizable human NeRF method for sparse-view reconstruction using human priors.
+        
     Skills:
-      - label: Programming
-        details: Python, C++, SQL, Java, Bash, Fish shell
-      - label: ML / Graphics
-        details: PyTorch, PyTorch3D, 3D Gaussian Splatting, NeRF, differentiable rendering, point-based and mesh-based avatar pipelines
-      - label: Tools
-        details: Git, Linux, Docker, Hydra, LaTeX, CUDA-based research workflows, remote GPU clusters
+      - name: Programming
+        keywords:
+          - Python
+          - C++
+          - SQL
+          - Java
+          - Bash
+          - Fish shell
+
+      - name: ML / Graphics
+        keywords:
+          - PyTorch
+          - PyTorch3D
+          - 3D Gaussian Splatting
+          - NeRF
+          - Differentiable rendering
+          - Point-based and mesh-based avatar pipelines
+
+      - name: Tools
+        keywords:
+          - Git
+          - Linux
+          - Docker
+          - Hydra
+          - LaTeX
+          - CUDA-based research workflows
+          - Remote GPU clusters
 
     Languages:
-      - label: English
-        details: TOEFL iBT 106
-      - label: Japanese
-        details: JLPT N1
-      - label: Chinese
-        details: Native
+      - name: English
+        summary: TOEFL iBT 106
+
+      - name: Japanese
+        summary: JLPT N1
+
+      - name: Chinese
+        summary: Native
 
     Honors:
       - label: Scholarship
         details: MEXT Scholarship (Japan)
-      - label: Presentation
-        details: CVPR 2026 Findings poster
-      - label: Presentation
-        details: Visual Computing 2025 poster

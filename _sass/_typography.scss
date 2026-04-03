@@ -134,3 +134,31 @@ blockquote {
     }
   }
 }
+/* --- Tufte-like typography tuning --- */
+
+/* 1. Font stacks */
+$zw-body-serif: "Noto Serif", Georgia, "Times New Roman", serif;
+$zw-heading-sans: "Gill Sans", "Gill Sans MT", "Lato", "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+
+/* 2. Body text */
+body {
+  font-family: $zw-body-serif;
+  line-height: 1.72;
+  letter-spacing: 0.002em;
+}
+
+/* 3. Headings: lighter, more editorial */
+h1, h2, h3, h4, h5, h6 {
+  font-family: $zw-heading-sans;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  line-height: 1.2;
+}
+
+/* Optional: make page titles a bit calmer */
+.post-title,
+.page-title {
+  font-family: $zw-heading-sans;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
