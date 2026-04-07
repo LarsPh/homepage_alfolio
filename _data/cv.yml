@@ -10,6 +10,7 @@ cv:
       username: LarsPh
     - network: Google Scholar
       username: 3numV2UAAAAJ
+
   sections:
     Education:
       - institution: University of Tsukuba
@@ -26,44 +27,49 @@ cv:
         start_date: 2022-04
         end_date: 2024-03
 
+      - institution: Carleton University
+        location: Ottawa, Canada
+        area: Computer Science
+        studyType: Non-degree exchange (with transcript)
+        start_date: 2018-09
+        end_date: 2019-04
+
       - institution: Jiangnan University
         location: Wuxi, China
-        area: Information and Computational Science
+        area: Information and Computing Science
         studyType: B.S.
         start_date: 2016-09
         end_date: 2020-06
 
     Experience:
       - company: University of Tsukuba, CGG Lab
-        position: Doctoral Researcher
+        position: Doctoral Research, Computer Graphics and Vision
         location: Tsukuba, Japan
         start_date: 2024-04
         end_date: present
-        summary: Research on digital human reconstruction and editing using 3D Gaussian Splatting, NeRF, and geometry-aware learning methods.
+        summary: Research digital human editing with 3D Gaussian Splatting, focusing on outfit personalization, cross-avatar editing, and animatable avatar control.
         highlights:
-          - Design and implement multi-view training and inference pipelines in PyTorch.
-          - Study animatable avatars, outfit personalization, and mesh-based deformation models.
-          - Prototype Point Transformer-based vertex deformation and Gaussian-on-mesh animation pipelines.
-          - Build tooling for Linux GPU-cluster experimentation and reproducible research workflows.
+          - Design and implement a multi-stage 3D avatar editing system in PyTorch, combining mesh-based geometric optimization, self-supervised data generation, and diffusion-based refinement for high-fidelity free-viewpoint editing.
+          - Prototype feed-forward, animatable, and editable Gaussian avatars for body-shape control and outfit personalization.
+          - Build supporting tooling for GPU-cluster experimentation and data processing on Linux servers, improving reproducibility and day-to-day research workflow.
 
       - company: University of Tsukuba, CGG Lab
-        position: Master's Researcher
+        position: Master's Research, Computer Graphics and Vision
         location: Tsukuba, Japan
         start_date: 2022-04
         end_date: 2024-03
-        summary: Research on sparse-view digital human reconstruction and generalizable human NeRF.
+        summary: Researched sparse-view digital human reconstruction and rendering, with a focus on generalizable human NeRF models that balance rendering quality and inference efficiency.
         highlights:
-          - Developed a generalizable human avatar method for sparse input views.
-          - Worked on differentiable rendering, human priors, and multi-view geometry.
+          - Designed and implemented a human-prior-guided rendering pipeline in PyTorch, integrating geometry-aware guidance and occlusion-aware refinement for high-quality novel-view synthesis from only 3 to 4 input images.
 
-      - company: Collaborative Research Project
-        position: Research Contributor in Face Rendering
+      - company: Industry-Academia Research Collaboration
+        position: Rendering Research Contributor
         location: Japan
         start_date: 2025
         end_date: present
-        summary: Product-oriented collaborative research on face rendering and inverse rendering.
+        summary: Collaborative research project with an industry partner.
         highlights:
-          - Contributed practical modeling and analysis pipelines for facial appearance research.
+          - Contributed to a product-oriented face rendering and inverse rendering research project, focusing on practical modeling and analysis for facial geometry and appearance.
 
     Publications:
       - title: "AvatarMix: Identity-Preserving Cross-Avatar Composition for Outfit Personalization"
@@ -73,7 +79,7 @@ cv:
           - Yuki Endo
         publisher: CVPR 2026 Findings
         releaseDate: 2026
-        summary: Identity-preserving cross-avatar composition for outfit personalization with digital human avatars.
+        url: https://drive.google.com/file/d/1w87WUDEFDddauvEsJmRsj7p_2xqPDuto
 
       - title: "EG-HumanNeRF: Efficient Generalizable Human NeRF Utilizing Human Prior for Sparse View"
         authors:
@@ -83,14 +89,13 @@ cv:
         publisher: Computational Visual Media
         releaseDate: 2026
         url: https://doi.org/10.26599/CVM.2025.9450508
-        summary: A generalizable human NeRF method for sparse-view reconstruction using human priors.
-        
+
     Skills:
       - name: Programming
         keywords:
           - Python
           - C++
-          - Bash, Fish shell
+          - Shell scripting
 
       - name: ML / Graphics
         keywords:
@@ -99,17 +104,15 @@ cv:
           - 3D Gaussian Splatting
           - NeRF
           - Differentiable rendering
-          - Point-based and mesh-based avatar pipelines
+          - Digital human reconstruction/editing pipelines
 
       - name: Tools
         keywords:
           - Git
           - Linux
-          - Docker
-          - Hydra
           - LaTeX
-          - CUDA-based research workflows
-          - Remote GPU clusters
+          - Experiment management (W&B, Hydra)
+          - AI-assisted prototyping/debugging
 
     Languages:
       - name: English
@@ -121,6 +124,9 @@ cv:
       - name: Chinese
         summary: Native
 
-    Honors:
+    Awards:
       - label: Scholarship
-        details: MEXT Scholarship (Japan)
+        details: MEXT Scholarship, Apr. 2024 - Mar. 2027 (Japan)
+
+      - label: Presentations
+        details: CVPR 2026 Findings poster; Visual Computing 2025 poster (Japan); The 192nd Computer Graphics and Visual Informatics Research Symposium (Japan)

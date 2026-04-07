@@ -28,11 +28,11 @@ latest_posts:
   limit: 3
 ---
 
-I am a Ph.D. student in Computer Science at the University of Tsukuba, working in computer graphics and digital human modeling. My research focuses on **novel view synthesis**, **3D Gaussian Splatting**, and **animatable human avatars**, with an emphasis on high-fidelity reconstruction and editable digital humans.
+I am a Ph.D. student in Computer Science at the University of Tsukuba. My research lies at the intersection of **computer graphics**, **digital humans**, and **learning-based 3D representation**, with a current focus on **3D Gaussian Splatting**, **avatar editing**, and **animatable human avatars**.
 
-My recent work spans two directions. On the reconstruction side, I worked on **generalizable human NeRF** under sparse-view settings. On the editing side, I study **avatar editing and outfit personalization**, including cross-avatar composition, retargeting across body shape gaps, and animatable Gaussian avatars.
+My recent work spans two main directions. In my master's research, I studied **sparse-view digital human reconstruction and rendering**, focusing on generalizable human NeRF models that balance rendering quality and inference efficiency. In my doctoral research, I work on **digital human editing with 3D Gaussian Splatting**, including outfit personalization, cross-avatar editing, and animatable avatar control.
 
-More broadly, I am interested in research problems at the intersection of **computer graphics**, **3D vision**, and **learning-based human representation**. I enjoy building practical systems and research prototypes with **PyTorch**, GPU-based rendering pipelines, and geometry-aware learning methods.
+I enjoy building practical research systems in **PyTorch**, especially pipelines that combine geometry, rendering, and generative modeling. I also build supporting tooling for large-scale experimentation and reproducible workflows on Linux GPU servers.
 
 I hold **JLPT N1** in Japanese and am comfortable communicating in both English and Japanese in research settings.
 
