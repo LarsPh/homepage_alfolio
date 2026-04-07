@@ -36,4 +36,4 @@ I enjoy building practical research systems in **PyTorch**, especially pipelines
 
 I hold **JLPT N1** in Japanese and am comfortable communicating in both English and Japanese in research settings.
 
-Please see my [publications]({{ '/publications/' | relative_url }}), [projects]({{ '/projects/' | relative_url }}), and [CV]({{ '/cv/' | relative_url }}) for more details.
+Please see my [publications]({{ '/publications/' | relative_url }}), [projects]({{ '/projects/' | relative_url }}), and [CV]({{ '/assets/pdf/zhaorong_wang_resume.pdf' | relative_url }}) for more details.
