@@ -48,7 +48,27 @@
   <!-- Entry bib key -->
   <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
     <!-- Title -->
-    <div class="title">{{ entry.title }}</div>
+    <div class="title">
+      {% if entry.website %}
+        <a href="{{ entry.website }}">{{ entry.title }}</a>
+      {% elsif entry.pdf %}
+        {% if entry.pdf contains '://' %}
+          <a href="{{ entry.pdf }}">{{ entry.title }}</a>
+        {% else %}
+          <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}">{{ entry.title }}</a>
+        {% endif %}
+      {% elsif entry.html %}
+        {% if entry.html contains '://' %}
+          <a href="{{ entry.html }}">{{ entry.title }}</a>
+        {% else %}
+          <a href="{{ entry.html | prepend: '/assets/html/' | relative_url }}">{{ entry.title }}</a>
+        {% endif %}
+      {% elsif entry.doi %}
+        <a href="https://doi.org/{{ entry.doi }}">{{ entry.title }}</a>
+      {% else %}
+        {{ entry.title }}
+      {% endif %}
+    </div>
     <!-- Author -->
     <div class="author">
       {% assign author_array_size = entry.author_array | size %}
@@ -256,7 +276,7 @@
         {% endif %}
       {% endif %}
       {% if entry.website %}
-        <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
+        <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Project</a>
       {% endif %}
     </div>
     {% if site.enable_publication_badges %}

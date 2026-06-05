@@ -79,7 +79,7 @@ cv:
           - Yuki Endo
         publisher: CVPR 2026 Findings
         releaseDate: 2026
-        url: https://drive.google.com/file/d/1w87WUDEFDddauvEsJmRsj7p_2xqPDuto
+        url: https://larsph.github.io/avatarmix/
 
       - title: "EG-HumanNeRF: Efficient Generalizable Human NeRF Utilizing Human Prior for Sparse View"
         authors:
