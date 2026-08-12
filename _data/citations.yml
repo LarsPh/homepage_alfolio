@@ -1,11 +1,11 @@
 metadata:
-  last_updated: '2026-07-31'
+  last_updated: '2026-08-12'
 papers:
   3numV2UAAAAJ:u-x6o8ySG0sC:
     citations: 0
     title: 'AvatarMix: Identity-Preserving Cross-Avatar Composition for Outfit Personalization'
     year: '2026'
   3numV2UAAAAJ:u5HHmVD_uO8C:
-    citations: 1
+    citations: 3
     title: 'Eg-humannerf: Efficient generalizable human nerf utilizing human prior for sparse view'
     year: '2024'
