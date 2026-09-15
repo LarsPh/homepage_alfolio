@@ -310,10 +310,10 @@ hr {
   margin: 2rem 0;
 }
 
-html[data-theme="dark"] main a,
-html[data-theme="dark"] main a:visited {
+html[data-theme="dark"] [role="main"] a,
+html[data-theme="dark"] [role="main"] a:visited {
   color: #c7a98b;
 }
-html[data-theme="dark"] main a:hover {
+html[data-theme="dark"] [role="main"] a:hover {
   color: #e3c6a9;
 }
