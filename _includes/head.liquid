@@ -210,3 +210,7 @@
     crossorigin="anonymous"
   >
 {% endif %}
+
+{% if site.baseurl contains '/previews/' and page.lang == 'en' %}
+  {% include font_comparison.liquid %}
+{% endif %}

@@ -1,0 +1,40 @@
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&display=swap"
+>
+<script>
+  const previewFont = new URLSearchParams(window.location.search).get('font');
+  if (['source-serif', 'lora'].includes(previewFont)) {
+    document.documentElement.dataset.previewFont = previewFont;
+  }
+</script>
+<style>
+  html[lang='en'][data-preview-font='source-serif'] body {
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-optical-sizing: auto;
+  }
+  html[lang='en'][data-preview-font='lora'] body {
+    font-family: 'Lora', Georgia, serif;
+  }
+  .font-comparison {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem 1rem;
+    margin-bottom: 1.75rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--global-divider-color);
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 0.875rem;
+  }
+  .font-comparison span {
+    color: var(--global-text-color-light);
+  }
+  html:not([data-preview-font]) .font-comparison a[data-font='noto'],
+  html[data-preview-font='source-serif'] .font-comparison a[data-font='source-serif'],
+  html[data-preview-font='lora'] .font-comparison a[data-font='lora'] {
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 0.25em;
+  }
+</style>

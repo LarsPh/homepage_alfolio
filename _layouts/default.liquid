@@ -22,6 +22,14 @@
 
     <!-- Content -->
     <div class="container mt-5" role="main">
+      {% if site.baseurl contains '/previews/' and page.lang == 'en' %}
+        <nav class="font-comparison" aria-label="Body font comparison">
+          <span>Body font</span>
+          <a data-font="source-serif" href="?font=source-serif">Source Serif 4</a>
+          <a data-font="lora" href="?font=lora">Lora</a>
+          <a data-font="noto" href="?font=noto">Noto Serif</a>
+        </nav>
+      {% endif %}
       {% if page.toc and page.toc.sidebar %}
         {% if page.toc.sidebar == 'right' %}
           <div class="row">
