@@ -15,3 +15,10 @@ node_modules/
 vendr
 .specstory
 .cursorindexingignore
+# Public CV build dependencies and intermediate files
+_cv/fonts/
+_cv/*.aux
+_cv/*.log
+_cv/*.out
+_cv/*.pdf
+vendor/

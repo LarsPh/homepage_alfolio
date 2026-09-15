@@ -147,7 +147,12 @@ body {
 }
 
 /* Global headings: lighter and calmer */
-h1, h2, h3, h4, h5, h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
 .post-title,
 .page-title {
   font-family: $zw-heading-sans;
@@ -163,7 +168,8 @@ h1,
   font-weight: 400 !important;
 }
 
-h2, h3 {
+h2,
+h3 {
   font-weight: 400 !important;
 }
 

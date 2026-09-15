@@ -1,0 +1,48 @@
+---
+layout: page
+---
+{% assign cv_lang = page.lang | default: 'en' %}
+<div class="public-cv">
+  <p>
+    <a href="{{ '/assets/pdf/zhaorong_wang_resume.pdf' | relative_url }}">
+      {%- if cv_lang == 'ja' %}PDFをダウンロード{% else %}Download PDF{% endif -%}
+    </a>
+  </p>
+  <p>
+    <strong
+      >Wang Zhaorong{% if cv_lang == 'ja' %}（王 兆栄）{% endif -%}</strong
+    ><br>
+    <a href="mailto:zhaorong.wang1997@gmail.com">zhaorong.wang1997@gmail.com</a>
+  </p>
+  {% for section in site.data.public_cv[cv_lang] %}
+    <section>
+      <h2>{{ section.title }}</h2>
+      {% if section.education %}
+        <table class="cv-education">
+          <tbody>
+            {% for row in section.education %}
+              <tr>
+                <td>{{ row.date }}</td>
+                <td>{{ row.text }}</td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      {% else %}
+        {% for entry in section.entries %}
+          {% if entry.title %}
+            <h3>
+              {{ entry.title -}}
+              {%- if entry.date != empty %}
+                <span class="cv-date">{{ entry.date }}</span>
+              {%- endif %}
+            </h3>
+          {% endif %}
+          {% for paragraph in entry.paragraphs %}
+            <p>{{ paragraph }}</p>
+          {% endfor %}
+        {% endfor %}
+      {% endif %}
+    </section>
+  {% endfor %}
+</div>

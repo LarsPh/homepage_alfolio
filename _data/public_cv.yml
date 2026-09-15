@@ -1,0 +1,185 @@
+en:
+  - title: Education
+    education:
+      - date: Apr. 2024 – Mar. 2027
+        text: University of Tsukuba, Japan
+      - date: (expected)
+        text: Ph.D. in Computer Science
+      - date: ""
+        text: Kanamori and Endo Laboratory
+      - date: Apr. 2022 – Mar. 2024
+        text: University of Tsukuba, Japan
+      - date: ""
+        text: M.S. in Computer Science
+      - date: Sep. 2016 – Jun. 2020
+        text: Jiangnan University, China
+      - date: ""
+        text: B.S. in Information and Computing Science
+      - date: Sep. 2018 – Apr. 2019
+        text: Carleton University, Canada
+      - date: ""
+        text: Exchange student in Computer Science
+  - title: Research Experience
+    entries:
+      - title: '<a href="https://larsph.github.io/avatarmix/">AvatarMix: High-Quality 3D Virtual Try-On</a>'
+        date: Doctoral research
+        paragraphs:
+          - <strong>Overview.</strong> Developed a high-quality 3D virtual try-on method that combines two 3D avatars to show one
+            person wearing the other's clothing while preserving the wearer's face and body shape.
+          - <strong>Method.</strong> Proposed a method that combines the wearer's head with the clothing donor's avatar and adapts
+            the entire body to the wearer's shape. Used a diffusion model to repair composition seams and appearance artifacts caused
+            by deformation.
+          - <strong>Contribution.</strong> Formulated the body adaptation and seam repair problems and led method development, implementation,
+            evaluation, visualization, and manuscript preparation.
+          - <strong>Publication.</strong> Accepted to CVPR 2026 Findings.
+          - <a href="https://openaccess.thecvf.com/content/CVPR2026F/html/Wang_AvatarMix_Identity-Preserving_Cross-Avatar_Composition_for_Outfit_Personalization_CVPRF_2026_paper.html">Paper</a>  <a
+            href="https://larsph.github.io/avatarmix/">Project page</a>  <a href="https://github.com/LarsPh/AvatarMix-Code">Code</a>
+      - title: '<a href="https://doi.org/10.26599/CVM.2025.9450508">EG-HumanNeRF: Fast Human Novel-View Synthesis</a>'
+        date: Master's research
+        paragraphs:
+          - <strong>Overview.</strong> Developed a feed-forward method that synthesizes novel views of a person from three or four
+            images, balancing rendering speed and image quality without per-person retraining.
+          - <strong>Method.</strong> Used the SMPL-X human body model and predicted geometry to narrow NeRF sampling regions in
+            two stages, reducing computation. Improved image quality through occlusion-aware image refinement.
+          - <strong>Contribution.</strong> Developed the two-stage sampling method and occlusion-aware refinement, accelerated the
+            overall pipeline, and led implementation, evaluation, and manuscript preparation.
+          - <strong>Publication.</strong> Published in Computational Visual Media, 12(2), 355–379 (2026).
+          - <a href="https://doi.org/10.26599/CVM.2025.9450508">Paper</a>  <a href="https://ieeexplore.ieee.org/document/11373444/">Publisher</a>  <a
+            href="https://github.com/LarsPh/EG-HumanNeRF">Code</a>
+  - title: Ongoing Research
+    entries:
+      - title: Animatable 3D Avatars from Sparse Images
+        date: ""
+        paragraphs:
+          - Researching the reconstruction and animation of 3D human avatars from sparse images.
+  - title: Industry Research Experience
+    entries:
+      - title: "CyberAgent: Doctoral Research Intern"
+        date: Aug. – Sep. 2026
+        paragraphs:
+          - Research on 3D scene generation and world models.
+      - title: "Industry Collaboration: Facial Image Stylization"
+        date: 2025 – Present
+        paragraphs:
+          - Collaborative research on facial image stylization, with responsibilities in inverse rendering and neural network development.
+  - title: Independent Projects
+    entries:
+      - title: <a href="https://github.com/LarsPh/open-adaptive-shells">Open Adaptive Shells</a>
+        date: ""
+        paragraphs:
+          - Reimplemented <a href="https://arxiv.org/abs/2311.10091">Adaptive Shells</a>, a geometry-guided method for accelerating
+            NeRF rendering, from training through a high-speed renderer. Combined OptiX intersection queries with GPU kernel fusion
+            in Dr.Jit and optimized performance based on measurements. Also introduced prediction of gradient vectors including
+            their magnitudes to reduce differentiation costs.
+          - <a href="https://github.com/LarsPh/open-adaptive-shells">Code</a>
+      - title: <a href="https://github.com/LarsPh/VolLenia_Playground">VolLenia Playground</a>
+        date: ""
+        paragraphs:
+          - Developing an environment for 3D artificial-life simulation, volume rendering, and automated search. Combined differentiable
+            optimization with mutation-based exploration, and published code and videos.
+          - <a href="https://github.com/LarsPh/VolLenia_Playground">Code</a>
+  - title: Publications
+    entries:
+      - paragraphs:
+          - '<a href="https://openaccess.thecvf.com/content/CVPR2026F/html/Wang_AvatarMix_Identity-Preserving_Cross-Avatar_Composition_for_Outfit_Personalization_CVPRF_2026_paper.html">AvatarMix:
+            Identity-Preserving Cross-Avatar Composition for Outfit Personalization</a><br>'
+          - Zhaorong Wang, Yoshihiro Kanamori, Yuki Endo. CVPR 2026 Findings, 2026.
+          - '<a href="https://doi.org/10.26599/CVM.2025.9450508">EG-HumanNeRF: Efficient Generalizable Human NeRF Utilizing Human
+            Prior for Sparse View</a><br>'
+          - Zhaorong Wang, Yoshihiro Kanamori, Yuki Endo. Computational Visual Media, 12(2), 355–379, 2026.
+  - title: Skills
+    entries:
+      - paragraphs:
+          - <strong>Programming languages.</strong> Python, C++, CUDA, shell scripting
+          - <strong>Frameworks and tools.</strong> PyTorch, Git, Linux, Blender
+          - <strong>Languages.</strong> Chinese (native), Japanese (JLPT N1), English (TOEFL iBT 106)
+  - title: Scholarship
+    entries:
+      - paragraphs:
+          - Japanese Government (MEXT) Scholarship, Apr. 2024 – Mar. 2027.
+ja:
+  - title: 学歴
+    education:
+      - date: 2024年4月 – 2027年3月
+        text: 筑波大学大学院 博士後期課程（修了見込）
+      - date: ""
+        text: 情報理工学位プログラム、金森・遠藤研究室
+      - date: 2022年4月 – 2024年3月
+        text: 筑波大学大学院 博士前期課程
+      - date: ""
+        text: 情報理工学位プログラム
+      - date: 2016年9月 – 2020年6月
+        text: Jiangnan University（中国）
+      - date: ""
+        text: B.S. in Information and Computing Science
+      - date: 2018年9月 – 2019年4月
+        text: Carleton University（カナダ）
+      - date: ""
+        text: Computer Science（交換留学）
+  - title: 研究経験
+    entries:
+      - title: <a href="https://larsph.github.io/avatarmix/">AvatarMix：3Dアバターを用いた高品質な仮想試着</a>
+        date: 博士課程
+        paragraphs:
+          - <strong>概要</strong>　二つの3Dアバターから、一方の人物の顔や体型を保ちながら、もう一方の服装を着用した姿を作る、高品質な3D仮想試着手法を研究しました。
+          - <strong>手法</strong>　試着する人物の頭部を衣服提供側のアバターに組み合わせ、身体全体を本人の体型に合わせる新しい仮想試着手法を提案し、合成部の継ぎ目や変形による外観の崩れを拡散モデルで修復しました。
+          - <strong>自身の貢献</strong>　体型適応と接合部修復の課題を具体化し、手法構築から実装、評価、可視化、論文執筆まで主導しました。
+          - <strong>論文採択歴</strong>　CVPR 2026 Findingsに採択。
+          - <a href="https://openaccess.thecvf.com/content/CVPR2026F/html/Wang_AvatarMix_Identity-Preserving_Cross-Avatar_Composition_for_Outfit_Personalization_CVPRF_2026_paper.html">論文</a>  <a
+            href="https://larsph.github.io/avatarmix/">プロジェクトページ</a>  <a href="https://github.com/LarsPh/AvatarMix-Code">公開コード</a>
+      - title: <a href="https://doi.org/10.26599/CVM.2025.9450508">EG-HumanNeRF：少数画像からの高速な人物新視点合成</a>
+        date: 修士課程
+        paragraphs:
+          - <strong>概要</strong>　同一人物を撮影した三、四枚の画像から、未撮影の視点の人物画像を生成するフィードフォワード型の手法を研究しました。人物ごとの再学習を必要とせず、描画速度と画質の両立を図ります。
+          - <strong>手法</strong>　人体モデル（SMPL-X）と予測した幾何情報を用いてNeRFのサンプリング範囲を二段階で絞り、計算量を減らすとともに、遮蔽領域を考慮した画像補正で画質を改善しました。
+          - <strong>自身の貢献</strong>　二段階のサンプリング手法と遮蔽を考慮した画像補正を設計し、処理全体の高速化、実装、評価、論文執筆まで主導しました。
+          - <strong>論文採択歴</strong>　Computational Visual Media 12(2), 355–379（2026）に掲載。
+          - <a href="https://doi.org/10.26599/CVM.2025.9450508">論文</a>  <a href="https://ieeexplore.ieee.org/document/11373444/">掲載先</a>  <a
+            href="https://github.com/LarsPh/EG-HumanNeRF">公開コード</a>
+  - title: 現在の研究
+    entries:
+      - title: 少数の画像からアニメーション可能な3Dアバターを構築
+        date: 研究中
+        paragraphs:
+          - 少数の人物画像からの3Dアバター再構成とアニメーションに関する研究に取り組んでいます。
+  - title: 実務経験と共同研究
+    entries:
+      - title: サイバーエージェント 博士研究インターン
+        date: 2026年8月 – 9月
+        paragraphs:
+          - 3Dシーン生成と世界モデルに関する研究に取り組んでいます。
+      - title: 企業共同研究：顔画像のスタイル変換
+        date: 2025年 – 現在
+        paragraphs:
+          - 顔画像のスタイル変換に関する共同研究に参加し、逆レンダリングとニューラルネットワークの開発を担当しています。
+  - title: 個人開発
+    entries:
+      - title: <a href="https://github.com/LarsPh/open-adaptive-shells">Open Adaptive Shells</a>
+        date: ""
+        paragraphs:
+          - 幾何情報を用いてNeRFの描画を高速化する論文「<a href="https://arxiv.org/abs/2311.10091">Adaptive Shells</a>」を、学習から高速レンダラーまで再現実装しました。OptiXによる交差判定とDr.JitによるGPU処理の融合を組み合わせ、実測に基づいて高速化しました。勾配の大きさを含むベクトル予測も導入し、微分計算の負担を減らしました。
+          - <a href="https://github.com/LarsPh/open-adaptive-shells">公開コード</a>
+      - title: <a href="https://github.com/LarsPh/VolLenia_Playground">VolLenia Playground</a>
+        date: ""
+        paragraphs:
+          - 3D人工生命のシミュレーション、ボリューム描画、自動探索を行う環境を開発しています。微分可能な最適化と変異による探索を組み合わせ、コードと動画を公開しました。
+          - <a href="https://github.com/LarsPh/VolLenia_Playground">公開コード</a>
+  - title: 採択歴
+    entries:
+      - paragraphs:
+          - '<a href="https://openaccess.thecvf.com/content/CVPR2026F/html/Wang_AvatarMix_Identity-Preserving_Cross-Avatar_Composition_for_Outfit_Personalization_CVPRF_2026_paper.html">AvatarMix:
+            Identity-Preserving Cross-Avatar Composition for Outfit Personalization</a><br>'
+          - Zhaorong Wang, Yoshihiro Kanamori, Yuki Endo. CVPR 2026 Findings, 2026.
+          - '<a href="https://doi.org/10.26599/CVM.2025.9450508">EG-HumanNeRF: Efficient Generalizable Human NeRF Utilizing Human
+            Prior for Sparse View</a><br>'
+          - Zhaorong Wang, Yoshihiro Kanamori, Yuki Endo. Computational Visual Media, 12(2), 355–379, 2026.
+  - title: スキル
+    entries:
+      - paragraphs:
+          - <strong>プログラミング言語</strong>　Python、C++、CUDA、シェルスクリプト
+          - <strong>開発環境とツール</strong>　PyTorch、Git、Linux、Blender
+          - <strong>語学力</strong>　中国語（母語）、日本語（JLPT N1）、英語（TOEFL iBT 106点）
+  - title: 奨学金
+    entries:
+      - paragraphs:
+          - 文部科学省国費外国人留学生奨学金（2024年4月 – 2027年3月）

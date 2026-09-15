@@ -1,0 +1,91 @@
+% Compile with XeLaTeX via build.py. See README.md for font setup.
+\documentclass[a4paper,11pt]{article}
+\usepackage[margin=18mm]{geometry}
+\usepackage{fontspec}
+\IfFileExists{fonts/NotoSerifCJKjp-Regular.otf}{\setmainfont{NotoSerifCJKjp-Regular.otf}[Path=fonts/]}{\setmainfont{Noto Serif CJK JP}}
+\IfFileExists{fonts/NotoSansCJKjp-Bold.otf}{\newfontfamily\headingfont{NotoSansCJKjp-Bold.otf}[Path=fonts/]}{\newfontfamily\headingfont{Noto Sans CJK JP}[UprightFont=*-Bold]}
+\XeTeXlinebreaklocale "ja"
+\XeTeXlinebreakskip=0pt plus 1pt
+\usepackage{titlesec,enumitem,tabularx,fancyhdr,needspace}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Wang Zhaorong - Curriculum Vitae},pdfauthor={Wang Zhaorong}}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+\linespread{1.08}
+\titleformat{\section}{\headingfont\large}{}{0pt}{}[\titlerule]
+\titlespacing*{\section}{0pt}{10pt}{5pt}
+\newcommand{\entry}[2]{\Needspace{4\baselineskip}\par\vspace{5pt}{\headingfont #1}\hfill #2\par}
+\newcommand{\field}[2]{\par{\headingfont #1}\quad #2\par}
+\newcommand{\link}[2]{\href{#1}{\underline{#2}}}
+\pagestyle{fancy}\fancyhf{}\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[L]{\small Wang Zhaorong}\fancyfoot[R]{\small\thepage}
+\setlength{\footskip}{20pt}
+\raggedbottom
+\begin{document}
+\begin{center}
+{\headingfont\LARGE Wang Zhaorong（王 兆栄）}\\[4pt]
+\href{mailto:zhaorong.wang1997@gmail.com}{zhaorong.wang1997@gmail.com}\qquad
+\href{mailto:s2430164@u.tsukuba.ac.jp}{s2430164@u.tsukuba.ac.jp}\\[3pt]
+\link{https://larsph.github.io/}{個人サイト}\qquad
+\link{https://github.com/LarsPh}{GitHub}\qquad
+\link{https://scholar.google.com/citations?user=3numV2UAAAAJ}{Google Scholar}
+\end{center}
+\section{学歴}
+\begin{tabularx}{\textwidth}{@{}p{53mm}X@{}}
+2024年4月 -- 2027年3月 & 筑波大学大学院 博士後期課程（修了見込）\\
+ & 情報理工学位プログラム、金森・遠藤研究室\\
+2022年4月 -- 2024年3月 & 筑波大学大学院 博士前期課程\\
+ & 情報理工学位プログラム\\
+2016年9月 -- 2020年6月 & Jiangnan University（中国）\\
+ & B.S. in Information and Computing Science\\
+2018年9月 -- 2019年4月 & Carleton University（カナダ）\\
+ & Computer Science（交換留学）
+\end{tabularx}
+\section{研究経験}
+\entry{\href{https://larsph.github.io/avatarmix/}{AvatarMix：3Dアバターを用いた高品質な仮想試着}}{博士課程}
+\field{概要}{二つの3Dアバターから、一方の人物の顔や体型を保ちながら、もう一方の服装を着用した姿を作る、高品質な3D仮想試着手法を研究しました。}
+\field{手法}{試着する人物の頭部を衣服提供側のアバターに組み合わせ、身体全体を本人の体型に合わせる新しい仮想試着手法を提案し、合成部の継ぎ目や変形による外観の崩れを拡散モデルで修復しました。}
+\field{自身の貢献}{体型適応と接合部修復の課題を具体化し、手法構築から実装、評価、可視化、論文執筆まで主導しました。}
+\field{論文採択歴}{CVPR 2026 Findingsに採択。}
+\link{https://openaccess.thecvf.com/content/CVPR2026F/html/Wang_AvatarMix_Identity-Preserving_Cross-Avatar_Composition_for_Outfit_Personalization_CVPRF_2026_paper.html}{論文}\quad \link{https://larsph.github.io/avatarmix/}{プロジェクトページ}\quad \link{https://github.com/LarsPh/AvatarMix-Code}{公開コード}
+\entry{\href{https://doi.org/10.26599/CVM.2025.9450508}{EG-HumanNeRF：少数画像からの高速な人物新視点合成}}{修士課程}
+\field{概要}{同一人物を撮影した三、四枚の画像から、未撮影の視点の人物画像を生成するフィードフォワード型の手法を研究しました。人物ごとの再学習を必要とせず、描画速度と画質の両立を図ります。}
+\field{手法}{人体モデル（SMPL-X）と予測した幾何情報を用いてNeRFのサンプリング範囲を二段階で絞り、計算量を減らすとともに、遮蔽領域を考慮した画像補正で画質を改善しました。}
+\field{自身の貢献}{二段階のサンプリング手法と遮蔽を考慮した画像補正を設計し、処理全体の高速化、実装、評価、論文執筆まで主導しました。}
+\field{論文採択歴}{Computational Visual Media 12(2), 355--379（2026）に掲載。}
+\link{https://doi.org/10.26599/CVM.2025.9450508}{論文}\quad \link{https://ieeexplore.ieee.org/document/11373444/}{掲載先}\quad \link{https://github.com/LarsPh/EG-HumanNeRF}{公開コード}
+
+\section{現在の研究}
+\entry{少数の画像からアニメーション可能な3Dアバターを構築}{研究中}
+少数の人物画像からの3Dアバター再構成とアニメーションに関する研究に取り組んでいます。
+
+\newpage
+\section{実務経験と共同研究}
+\entry{サイバーエージェント 博士研究インターン}{2026年8月 -- 9月}
+3Dシーン生成と世界モデルに関する研究に取り組んでいます。
+\entry{企業共同研究：顔画像のスタイル変換}{2025年 -- 現在}
+顔画像のスタイル変換に関する共同研究に参加し、逆レンダリングとニューラルネットワークの開発を担当しています。
+
+\section{個人開発}
+\entry{\href{https://github.com/LarsPh/open-adaptive-shells}{Open Adaptive Shells}}{}
+幾何情報を用いてNeRFの描画を高速化する論文「\href{https://arxiv.org/abs/2311.10091}{Adaptive Shells}」を、学習から高速レンダラーまで再現実装しました。OptiXによる交差判定とDr.JitによるGPU処理の融合を組み合わせ、実測に基づいて高速化しました。勾配の大きさを含むベクトル予測も導入し、微分計算の負担を減らしました。
+\par\link{https://github.com/LarsPh/open-adaptive-shells}{公開コード}
+\entry{\href{https://github.com/LarsPh/VolLenia_Playground}{VolLenia Playground}}{}
+3D人工生命のシミュレーション、ボリューム描画、自動探索を行う環境を開発しています。微分可能な最適化と変異による探索を組み合わせ、コードと動画を公開しました。
+\par\link{https://github.com/LarsPh/VolLenia_Playground}{公開コード}
+
+\section{採択歴}
+\href{https://openaccess.thecvf.com/content/CVPR2026F/html/Wang_AvatarMix_Identity-Preserving_Cross-Avatar_Composition_for_Outfit_Personalization_CVPRF_2026_paper.html}{AvatarMix: Identity-Preserving Cross-Avatar Composition for Outfit Personalization}\\
+Zhaorong Wang, Yoshihiro Kanamori, Yuki Endo. CVPR 2026 Findings, 2026.
+
+\href{https://doi.org/10.26599/CVM.2025.9450508}{EG-HumanNeRF: Efficient Generalizable Human NeRF Utilizing Human Prior for Sparse View}\\
+Zhaorong Wang, Yoshihiro Kanamori, Yuki Endo. Computational Visual Media, 12(2), 355--379, 2026.
+
+\section{スキル}
+\field{プログラミング言語}{Python、C++、CUDA、シェルスクリプト}
+\field{開発環境とツール}{PyTorch、Git、Linux、Blender}
+\field{語学力}{中国語（母語）、日本語（JLPT N1）、英語（TOEFL iBT 106点）}
+\section{奨学金}
+文部科学省国費外国人留学生奨学金（2024年4月 -- 2027年3月）
+\end{document}
