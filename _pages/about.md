@@ -19,7 +19,7 @@ I am a Ph.D. student in Computer Science at the University of Tsukuba, advised b
 
 My research focuses on neural rendering and digital humans. I work on reconstructing people from sparse images, editing 3D avatars, and animating them.
 
-I am a doctoral research intern in the Generative Media team at [CyberAgent](https://www.cyberagent.co.jp/en/) from August to September 2026, working on 3D scene generation.
+I am a doctoral research intern at [CyberAgent](https://www.cyberagent.co.jp/en/) from August to September 2026, working on 3D scene generation.
 
 <div class="profile-links">
 <a href="mailto:zhaorong.wang1997@gmail.com">Email</a>

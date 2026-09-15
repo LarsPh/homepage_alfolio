@@ -19,7 +19,7 @@ social: false
 
 ニューラルレンダリングとデジタルヒューマンを研究しています。少数画像からの人物再構成、3Dアバターの編集、アニメーションに関心があります。
 
-2026年8月から9月まで、[サイバーエージェント](https://www.cyberagent.co.jp/)のGenerative Mediaチームで博士研究インターンに参加し、3Dシーン生成に関する研究に取り組んでいます。
+2026年8月から9月まで、[サイバーエージェント](https://www.cyberagent.co.jp/)で博士研究インターンに参加し、3Dシーン生成に関する研究に取り組んでいます。
 
 <div class="profile-links">
 <a href="mailto:zhaorong.wang1997@gmail.com">Email</a>

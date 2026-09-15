@@ -5,6 +5,7 @@ on:
     branches:
       - master
       - main
+      - feat/bilingual-academic-profile
     paths:
       - "assets/**"
       - "_sass/**"
@@ -93,13 +94,24 @@ jobs:
           sudo apt-get update && sudo apt-get install -y imagemagick
           pip3 install --upgrade nbconvert
           export JEKYLL_ENV=production
-          bundle exec jekyll build
+          if [ "$GITHUB_REF" = "refs/heads/feat/bilingual-academic-profile" ]; then
+            bundle exec jekyll build --baseurl /homepage_alfolio/previews/profile-update
+          else
+            bundle exec jekyll build
+          fi
       - name: Purge unused CSS 🧹
         run: |
           npm install -g purgecss
           purgecss -c purgecss.config.js
       - name: Deploy 🚀
-        if: github.event_name != 'pull_request'
+        if: github.event_name != 'pull_request' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master')
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: _site
+          clean-exclude: previews
+      - name: Deploy profile preview
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/feat/bilingual-academic-profile'
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: _site
+          target-folder: previews/profile-update
