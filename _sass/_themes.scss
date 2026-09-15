@@ -217,6 +217,8 @@ html[data-theme-setting="light"] {
   --global-divider-color: #d8d1c6;
   --global-card-bg-color: #fbfaf7;
   --global-footer-bg-color: #f4f1eb;
+  --global-footer-text-color: #5f5a52;
+  --global-footer-link-color: #5c4a3d;
 }
 
 html[data-theme="dark"] {
@@ -229,6 +231,8 @@ html[data-theme="dark"] {
   --global-divider-color: #3a3935;
   --global-card-bg-color: #1c1c19;
   --global-footer-bg-color: #141412;
+  --global-footer-text-color: #b9b2a7;
+  --global-footer-link-color: #c7a98b;
 }
 
 /* --- Light Tufte-like typography --- */
@@ -304,4 +308,12 @@ hr {
   border: 0;
   border-top: 1px solid var(--global-divider-color);
   margin: 2rem 0;
+}
+
+html[data-theme="dark"] main a,
+html[data-theme="dark"] main a:visited {
+  color: #c7a98b;
+}
+html[data-theme="dark"] main a:hover {
+  color: #e3c6a9;
 }
