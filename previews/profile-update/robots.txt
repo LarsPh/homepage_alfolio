@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://larsph.github.io/homepage_alfolio/previews/profile-update/sitemap.xml
