@@ -251,3 +251,27 @@ html[lang="en"] body {
 html[lang="en"] .work-description {
   font-size: 1.1875rem;
 }
+
+.work-video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  border-radius: 4px;
+  background: #111;
+}
+.work-info {
+  min-width: 0;
+}
+.work-info h3,
+.public-cv a {
+  overflow-wrap: anywhere;
+}
+@media (max-width: 575px) {
+  .public-cv .cv-education td:first-child {
+    width: 38%;
+  }
+  .public-cv .cv-education td {
+    padding-right: 0.6rem;
+  }
+}

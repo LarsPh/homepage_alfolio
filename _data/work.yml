@@ -39,6 +39,7 @@
 - id: adaptive-shells
   kind: project
   title: Open Adaptive Shells
+  video: https://raw.githubusercontent.com/LarsPh/open-adaptive-shells/main/renderer/docs/media/viewer-demo.mp4
   image: /assets/img/projects/adaptive-shells.png
   alt: A Khady scene rendered in the Open Adaptive Shells interactive viewer.
   url: https://github.com/LarsPh/open-adaptive-shells
@@ -55,6 +56,7 @@
 - id: vol-lenia
   kind: project
   title: VolLenia Playground
+  video: https://raw.githubusercontent.com/LarsPh/VolLenia_Playground/main/assets/showcase/gallery.mp4
   image: /assets/img/projects/vol-lenia.png
   alt: A gallery of 3D Lenia and Flow Lenia patterns shown with volume rendering.
   url: https://github.com/LarsPh/VolLenia_Playground
