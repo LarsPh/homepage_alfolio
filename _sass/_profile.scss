@@ -15,7 +15,7 @@
 }
 .work-list {
   display: grid;
-  gap: 2rem;
+  gap: 2.75rem;
 }
 .work-entry {
   display: grid;
@@ -32,14 +32,14 @@
   border-radius: 4px;
 }
 .work-info h3 {
-  font-size: 1.12rem;
-  font-weight: 500;
+  font-size: 1.375rem;
+  font-weight: 600;
   line-height: 1.4;
   margin: 0 0 0.4rem;
 }
 .work-authors,
 .work-venue {
-  font-size: 0.88rem;
+  font-size: 1rem;
   margin: 0 0 0.3rem;
 }
 .work-authors a {
@@ -49,15 +49,15 @@
   font-style: italic;
 }
 .work-description {
-  font-size: 0.95rem;
-  line-height: 1.55;
+  font-size: 1.125rem;
+  line-height: 1.7;
   margin: 0.65rem 0;
 }
 .work-links a {
-  font-size: 0.86rem;
+  font-size: 1rem;
   border: 1px solid var(--global-divider-color);
   border-radius: 3px;
-  padding: 0.1rem 0.5rem;
+  padding: 0.2rem 0.65rem;
 }
 .publication-citations {
   margin-top: 3rem;
@@ -73,17 +73,17 @@
   margin: 2rem 0;
 }
 .public-cv h2 {
-  font-size: 1.45rem;
+  font-size: 1.75rem;
   border-bottom: 1px solid var(--global-divider-color);
   padding-bottom: 0.4rem;
 }
 .public-cv h3 {
-  font-size: 1.08rem;
-  font-weight: 500;
+  font-size: 1.25rem;
+  font-weight: 600;
   margin: 1.2rem 0 0.4rem;
 }
 .public-cv .cv-date {
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 400;
   color: var(--global-text-color-light);
 }
@@ -116,5 +116,162 @@ html[lang="ja"] body {
   }
   .public-cv .cv-education td:first-child {
     width: 35%;
+  }
+}
+
+// Shared reading scale and language-specific typography.
+body {
+  font-size: 1.125rem;
+}
+h1,
+.post-title {
+  font-size: 2.625rem;
+  font-weight: 500;
+  letter-spacing: -0.025em;
+}
+h2 {
+  font-size: 1.875rem;
+  font-weight: 600;
+}
+.post-header {
+  margin-bottom: 1.75rem;
+}
+.post-header .desc {
+  font-size: 1.0625rem;
+  color: var(--global-text-color-light);
+  margin-top: 0.65rem;
+}
+.about-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 160px;
+  gap: 2.5rem;
+  align-items: start;
+}
+.about-intro .intro-copy {
+  grid-column: 1;
+  grid-row: 1;
+}
+.about-intro .profile {
+  grid-column: 2;
+  width: 100%;
+  margin: 0;
+}
+.about-intro .profile img {
+  max-width: 160px !important;
+  box-shadow: none !important;
+}
+.profile-links {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  gap: 0.75rem 1.25rem;
+  margin-top: 1.5rem;
+}
+.work-info h3 a {
+  color: var(--global-text-color);
+}
+.work-info h3 a:hover {
+  color: var(--global-theme-color);
+}
+.work-links {
+  gap: 0.5rem;
+  margin-top: 0.9rem;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 500;
+}
+.work-links a:hover {
+  border-color: var(--global-theme-color);
+  text-decoration: none;
+}
+.work-venue {
+  font-style: normal;
+  font-weight: 500;
+}
+.navbar .nav-link,
+.navbar-brand {
+  font-family: "Noto Sans", sans-serif;
+}
+.navbar .nav-link {
+  font-size: 1rem;
+  letter-spacing: 0;
+}
+html[lang="ja"] body {
+  font-family: "Noto Serif JP", "Yu Mincho", "Hiragino Mincho ProN", serif;
+  line-height: 1.85;
+  letter-spacing: 0;
+}
+html[lang="ja"] h1,
+html[lang="ja"] h2,
+html[lang="ja"] h3,
+html[lang="ja"] h4,
+html[lang="ja"] .navbar-brand,
+html[lang="ja"] .navbar .nav-link,
+html[lang="ja"] .profile-links,
+html[lang="ja"] .work-links {
+  font-family: "Noto Sans JP", "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif;
+  letter-spacing: 0;
+}
+html[lang="ja"] .work-description {
+  line-height: 1.85;
+}
+html[lang="ja"] .work-authors,
+html[lang="ja"] .work-venue {
+  line-height: 1.65;
+}
+@media (max-width: 767px) {
+  h1,
+  .post-title {
+    font-size: 2.125rem;
+  }
+  .about-intro {
+    display: block;
+  }
+  .about-intro .profile {
+    float: right;
+    width: 112px;
+    margin: 0.25rem 0 1rem 1.25rem;
+  }
+  .about-intro .profile img {
+    max-width: 112px !important;
+  }
+  .intro-copy::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .work-info h3 {
+    font-size: 1.25rem;
+  }
+}
+
+html[lang="en"] body {
+  font-family: "Lora", Georgia, serif;
+  font-size: 1.1875rem;
+}
+html[lang="en"] .work-description {
+  font-size: 1.1875rem;
+}
+
+.work-video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  border-radius: 4px;
+  background: #111;
+}
+.work-info {
+  min-width: 0;
+}
+.work-info h3,
+.public-cv a {
+  overflow-wrap: anywhere;
+}
+@media (max-width: 575px) {
+  .public-cv .cv-education td:first-child {
+    width: 38%;
+  }
+  .public-cv .cv-education td {
+    padding-right: 0.6rem;
   }
 }

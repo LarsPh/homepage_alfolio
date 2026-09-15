@@ -3,9 +3,29 @@
   {% assign works = site.data.work | where: 'kind', include.kind %}
   {% for work in works %}
     <article class="work-entry" id="{{ work.id }}">
-      <a class="work-image" href="{{ work.url }}">
-        <img src="{{ work.image | relative_url }}" alt="{{ work.alt | escape }}" loading="lazy" decoding="async">
-      </a>
+      {% if work.video %}
+        <div class="work-image">
+          <video
+            class="work-video"
+            controls
+            muted
+            loop
+            playsinline
+            preload="none"
+            poster="{{ work.image | relative_url }}"
+            aria-label="{{ work.title | escape }}"
+          >
+            <source src="{{ work.video }}" type="video/mp4">
+            <a href="{{ work.video }}">
+              {%- if work_lang == 'ja' %}動画を見る{% else %}Watch video{% endif -%}
+            </a>
+          </video>
+        </div>
+      {% else %}
+        <a class="work-image" href="{{ work.url }}">
+          <img src="{{ work.image | relative_url }}" alt="{{ work.alt | escape }}" loading="lazy" decoding="async">
+        </a>
+      {% endif %}
       <div class="work-info">
         <h3>
           <a href="{{ work.url }}">{{ work.title }}</a>
