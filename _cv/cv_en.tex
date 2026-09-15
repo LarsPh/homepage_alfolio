@@ -1,0 +1,90 @@
+% Compile with XeLaTeX via build.py. See README.md for font setup.
+\documentclass[a4paper,11pt]{article}
+\usepackage[margin=18mm]{geometry}
+\usepackage{fontspec}
+\setmainfont{Latin Modern Roman}
+\usepackage{titlesec,tabularx,fancyhdr,needspace}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Wang Zhaorong - Curriculum Vitae},pdfauthor={Wang Zhaorong}}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+\linespread{1.02}
+\titleformat{\section}{\large\bfseries}{}{0pt}{}[\titlerule]
+\titlespacing*{\section}{0pt}{10pt}{5pt}
+\newcommand{\entry}[2]{\Needspace{4\baselineskip}\par\vspace{5pt}\textbf{#1}\hfill #2\par}
+\newcommand{\field}[2]{\par\textbf{#1.} #2\par}
+\newcommand{\link}[2]{\href{#1}{\underline{#2}}}
+\pagestyle{fancy}\fancyhf{}\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[L]{\small Wang Zhaorong}\fancyfoot[R]{\small\thepage}
+\setlength{\footskip}{20pt}
+\raggedbottom
+\begin{document}
+\begin{center}
+{\LARGE\bfseries Wang Zhaorong}\\[4pt]
+\href{mailto:zhaorong.wang1997@gmail.com}{zhaorong.wang1997@gmail.com}\qquad
+\href{mailto:s2430164@u.tsukuba.ac.jp}{s2430164@u.tsukuba.ac.jp}\\[3pt]
+\link{https://larsph.github.io/}{Website}\qquad
+\link{https://github.com/LarsPh}{GitHub}\qquad
+\link{https://scholar.google.com/citations?user=3numV2UAAAAJ}{Google Scholar}
+\end{center}
+\section{Education}
+\begin{tabularx}{\textwidth}{@{}p{53mm}X@{}}
+Apr. 2024 -- Mar. 2027 & University of Tsukuba, Japan\\
+(expected) & Ph.D. in Computer Science\\
+ & Kanamori and Endo Laboratory\\
+Apr. 2022 -- Mar. 2024 & University of Tsukuba, Japan\\
+ & M.S. in Computer Science\\
+Sep. 2016 -- Jun. 2020 & Jiangnan University, China\\
+ & B.S. in Information and Computing Science\\
+Sep. 2018 -- Apr. 2019 & Carleton University, Canada\\
+ & Exchange student in Computer Science
+\end{tabularx}
+\section{Research Experience}
+\entry{\href{https://larsph.github.io/avatarmix/}{AvatarMix: High-Quality 3D Virtual Try-On}}{Doctoral research}
+\field{Overview}{Developed a high-quality 3D virtual try-on method that combines two 3D avatars to show one person wearing the other's clothing while preserving the wearer's face and body shape.}
+\field{Method}{Proposed a method that combines the wearer's head with the clothing donor's avatar and adapts the entire body to the wearer's shape. Used a diffusion model to repair composition seams and appearance artifacts caused by deformation.}
+\field{Contribution}{Formulated the body adaptation and seam repair problems and led method development, implementation, evaluation, visualization, and manuscript preparation.}
+\field{Publication}{Accepted to CVPR 2026 Findings.}
+\link{https://openaccess.thecvf.com/content/CVPR2026F/html/Wang_AvatarMix_Identity-Preserving_Cross-Avatar_Composition_for_Outfit_Personalization_CVPRF_2026_paper.html}{Paper}\quad \link{https://larsph.github.io/avatarmix/}{Project page}\quad \link{https://github.com/LarsPh/AvatarMix-Code}{Code}
+
+\entry{\href{https://doi.org/10.26599/CVM.2025.9450508}{EG-HumanNeRF: Fast Human Novel-View Synthesis}}{Master's research}
+\field{Overview}{Developed a feed-forward method that synthesizes novel views of a person from three or four images, balancing rendering speed and image quality without per-person retraining.}
+\field{Method}{Used the SMPL-X human body model and predicted geometry to narrow NeRF sampling regions in two stages, reducing computation. Improved image quality through occlusion-aware image refinement.}
+\field{Contribution}{Developed the two-stage sampling method and occlusion-aware refinement, accelerated the overall pipeline, and led implementation, evaluation, and manuscript preparation.}
+\field{Publication}{Published in Computational Visual Media, 12(2), 355--379 (2026).}
+\link{https://doi.org/10.26599/CVM.2025.9450508}{Paper}\quad \link{https://ieeexplore.ieee.org/document/11373444/}{Publisher}\quad \link{https://github.com/LarsPh/EG-HumanNeRF}{Code}
+
+\section{Ongoing Research}
+\entry{Animatable 3D Avatars from Sparse Images}{}
+Researching the reconstruction and animation of 3D human avatars from sparse images.
+
+\newpage
+\section{Industry Research Experience}
+\entry{CyberAgent: Doctoral Research Intern}{Aug. -- Sep. 2026}
+Research on 3D scene generation and world models in the Generative Media team.
+\entry{Industry Collaboration: Facial Image Stylization}{2025 -- Present}
+Collaborative research on facial image stylization, with responsibilities in inverse rendering and neural network development.
+
+\section{Independent Projects}
+\entry{\href{https://github.com/LarsPh/open-adaptive-shells}{Open Adaptive Shells}}{}
+Reimplemented \href{https://arxiv.org/abs/2311.10091}{Adaptive Shells}, a geometry-guided method for accelerating NeRF rendering, from training through a high-speed renderer. Combined OptiX intersection queries with GPU kernel fusion in Dr.Jit and optimized performance based on measurements. Also introduced prediction of gradient vectors including their magnitudes to reduce differentiation costs.
+\par\link{https://github.com/LarsPh/open-adaptive-shells}{Code}
+\entry{\href{https://github.com/LarsPh/VolLenia_Playground}{VolLenia Playground}}{}
+Developing an environment for 3D artificial-life simulation, volume rendering, and automated search. Combined differentiable optimization with mutation-based exploration, and published code and videos.
+\par\link{https://github.com/LarsPh/VolLenia_Playground}{Code}
+
+\section{Publications}
+\href{https://openaccess.thecvf.com/content/CVPR2026F/html/Wang_AvatarMix_Identity-Preserving_Cross-Avatar_Composition_for_Outfit_Personalization_CVPRF_2026_paper.html}{AvatarMix: Identity-Preserving Cross-Avatar Composition for Outfit Personalization}\\
+Zhaorong Wang, Yoshihiro Kanamori, Yuki Endo. CVPR 2026 Findings, 2026.
+
+\href{https://doi.org/10.26599/CVM.2025.9450508}{EG-HumanNeRF: Efficient Generalizable Human NeRF Utilizing Human Prior for Sparse View}\\
+Zhaorong Wang, Yoshihiro Kanamori, Yuki Endo. Computational Visual Media, 12(2), 355--379, 2026.
+
+
+\section{Skills}
+\field{Programming languages}{Python, C++, CUDA, shell scripting}
+\field{Frameworks and tools}{PyTorch, Git, Linux, Blender}
+\field{Languages}{Chinese (native), Japanese (JLPT N1), English (TOEFL iBT 106)}
+\section{Scholarship}
+Japanese Government (MEXT) Scholarship, Apr. 2024 -- Mar. 2027.
+\end{document}

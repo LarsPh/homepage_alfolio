@@ -1,39 +1,29 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
+lang: en
+translation: /ja/
 subtitle: Ph.D. Student in Computer Science, University of Tsukuba
-
+description: Wang Zhaorong researches neural rendering, digital humans, and 3D avatars at the University of Tsukuba.
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false
-  more_info: >
-    Ph.D. Student<br>
-    Department of Computer Science<br>
-    University of Tsukuba<br>
-    Tsukuba, Japan
-
-selected_papers: true
-social: true
-
-announcements:
-  enabled: false
-  scrollable: true
-  limit: 5
-
-latest_posts:
-  enabled: false
-  scrollable: true
-  limit: 3
+selected_papers: false
+show_work: true
+social: false
 ---
 
-I am a Ph.D. student in Computer Science at the University of Tsukuba. My research lies at the intersection of **computer graphics**, **digital humans**, and **learning-based 3D representation**, with a current focus on **3D Gaussian Splatting**, **avatar editing**, and **animatable human avatars**.
+I am a Ph.D. student in Computer Science at the University of Tsukuba, advised by [Yoshihiro Kanamori](https://kanamori.cs.tsukuba.ac.jp/) and [Yuki Endo](https://www.cgg.cs.tsukuba.ac.jp/~endo/) in the [Computational Geometry and Graphics Laboratory (CGG)](https://www.cgg.cs.tsukuba.ac.jp/).
 
-My recent work spans two main directions. In my master's research, I studied **sparse-view digital human reconstruction and rendering**, focusing on generalizable human NeRF models that balance rendering quality and inference efficiency. In my doctoral research, I work on **digital human editing with 3D Gaussian Splatting**, including outfit personalization, cross-avatar editing, and animatable avatar control.
+My research focuses on neural rendering and digital humans. I work on reconstructing people from sparse images, editing 3D avatars, and animating them.
 
-I enjoy building practical research systems in **PyTorch**, especially pipelines that combine geometry, rendering, and generative modeling. I also build supporting tooling for large-scale experimentation and reproducible workflows on Linux GPU servers.
+I am a doctoral research intern in the Generative Media team at [CyberAgent](https://www.cyberagent.co.jp/en/) from August to September 2026, working on 3D scene generation.
 
-I hold **JLPT N1** in Japanese and am comfortable communicating in both English and Japanese in research settings.
-
-Please see my [publications]({{ '/publications/' | relative_url }}), [projects]({{ '/projects/' | relative_url }}), and [CV]({{ '/assets/pdf/zhaorong_wang_resume.pdf' | relative_url }}) for more details.
+<div class="profile-links">
+<a href="mailto:zhaorong.wang1997@gmail.com">Email</a>
+<a href="https://github.com/LarsPh">GitHub</a>
+<a href="https://scholar.google.com/citations?user=3numV2UAAAAJ">Google Scholar</a>
+<a href="{{ '/assets/pdf/zhaorong_wang_resume.pdf' | relative_url }}">CV (English + Japanese)</a>
+</div>

@@ -1,0 +1,29 @@
+{% assign work_lang = page.lang | default: 'en' %}
+<div class="work-list">
+  {% assign works = site.data.work | where: 'kind', include.kind %}
+  {% for work in works %}
+    <article class="work-entry" id="{{ work.id }}">
+      <a class="work-image" href="{{ work.url }}">
+        <img src="{{ work.image | relative_url }}" alt="{{ work.alt | escape }}" loading="lazy" decoding="async">
+      </a>
+      <div class="work-info">
+        <h3>
+          <a href="{{ work.url }}">{{ work.title }}</a>
+        </h3>
+        {% if work.kind == 'research' %}
+          <p class="work-authors">
+            <strong>Zhaorong Wang</strong>, <a href="https://kanamori.cs.tsukuba.ac.jp/">Yoshihiro Kanamori</a>,
+            <a href="https://www.cgg.cs.tsukuba.ac.jp/~endo/">Yuki Endo</a>
+          </p>
+          <p class="work-venue">{{ work.venue }}</p>
+        {% endif %}
+        <p class="work-description">{{ work.description[work_lang] }}</p>
+        <div class="work-links">
+          {% for link in work.links -%}
+            <a href="{{ link.url }}">{{ link.label }}</a>
+          {%- endfor %}
+        </div>
+      </div>
+    </article>
+  {% endfor %}
+</div>

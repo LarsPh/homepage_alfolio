@@ -2,9 +2,9 @@
 # Site settings
 # -----------------------------------------------------------------------------
 title: blank
-first_name: Zhaorong
+first_name: Wang
 middle_name:
-last_name: Wang
+last_name: Zhaorong
 
 contact_note:
 
@@ -49,7 +49,7 @@ external_services:
 # -----------------------------------------------------------------------------
 navbar_fixed: true
 footer_fixed: true
-search_enabled: true
+search_enabled: false
 socials_in_search: true
 posts_in_search: true
 bib_search: true
@@ -148,6 +148,24 @@ kramdown:
 include: ["_pages", "_scripts"]
 
 exclude:
+  - _cv/
+  - vendor/
+  - _posts/
+  - _books/
+  - _news/
+  - _teachings/
+  - _projects/
+  - _pages/blog.md
+  - _pages/books.md
+  - _pages/profiles.md
+  - _pages/teaching.md
+  - _pages/dropdown.md
+  - _pages/news.md
+  - assets/pdf/example_pdf.pdf
+  - assets/rendercv/
+  - assets/jupyter/
+  - assets/html/
+  - AGENTS.md
   - bin/
   - CONTRIBUTING.md
   - CUSTOMIZE.md
@@ -318,7 +336,6 @@ imagemagick:
     - ".jpeg"
     - ".png"
     - ".tiff"
-    - ".gif"
   output_formats:
     webp: "-auto-orient -quality 85"
 

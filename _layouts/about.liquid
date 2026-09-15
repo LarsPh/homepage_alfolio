@@ -64,6 +64,21 @@ layout: default
       {% include selected_papers.liquid %}
     {% endif %}
 
+    {% if page.show_work %}
+      <section class="home-work" aria-labelledby="research-heading">
+        <h2 id="research-heading">
+          {% if page.lang == 'ja' %}研究業績{% else %}Research{% endif %}
+        </h2>
+        {% include work_list.liquid kind="research" %}
+      </section>
+      <section class="home-work" aria-labelledby="projects-heading">
+        <h2 id="projects-heading">
+          {% if page.lang == 'ja' %}個人プロジェクト{% else %}Selected Projects{% endif %}
+        </h2>
+        {% include work_list.liquid kind="project" %}
+      </section>
+    {% endif %}
+
     <!-- Social -->
     {% if page.social %}
       <div class="social">

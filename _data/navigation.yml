@@ -1,0 +1,18 @@
+en:
+  - title: About
+    url: /
+  - title: Publications
+    url: /publications/
+  - title: Projects
+    url: /projects/
+  - title: CV
+    url: /cv/
+ja:
+  - title: 自己紹介
+    url: /ja/
+  - title: 研究業績
+    url: /ja/publications/
+  - title: プロジェクト
+    url: /ja/projects/
+  - title: CV
+    url: /ja/cv/

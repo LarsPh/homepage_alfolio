@@ -1,10 +1,8 @@
 ---
-layout: cv
-title: cv
+layout: public_cv
+title: CV
 permalink: /cv/
-nav: true
-nav_order: 6
-description:
-cv_pdf: /assets/pdf/zhaorong_wang_resume.pdf
-cv_format: rendercv
+lang: en
+translation: /ja/cv/
+description: Education, research, industry experience, and projects of Wang Zhaorong.
 ---

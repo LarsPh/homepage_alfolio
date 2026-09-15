@@ -212,7 +212,7 @@ html[data-theme-setting="light"] {
   --global-code-bg-color: #f2efe8;
   --global-text-color: #1f1f1b;
   --global-text-color-light: #5f5a52;
-  --global-theme-color: #5c4a3d;   // muted warm brown
+  --global-theme-color: #5c4a3d; // muted warm brown
   --global-hover-color: #3f332a;
   --global-divider-color: #d8d1c6;
   --global-card-bg-color: #fbfaf7;
@@ -254,7 +254,12 @@ li {
   line-height: 1.75;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
   letter-spacing: -0.01em;
@@ -276,7 +281,8 @@ h3 {
   font-size: 1.25rem;
 }
 
-a, a:visited {
+a,
+a:visited {
   text-decoration: none;
   color: var(--global-theme-color);
 }

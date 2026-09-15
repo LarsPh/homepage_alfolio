@@ -1,0 +1,68 @@
+- id: avatarmix
+  kind: research
+  title: "AvatarMix: Identity-Preserving Cross-Avatar Composition for Outfit Personalization"
+  venue: CVPR 2026 Findings
+  image: /assets/img/publication_preview/avatarmix.jpg
+  alt: AvatarMix combines clothing from one avatar with the identity and body shape of another.
+  url: https://larsph.github.io/avatarmix/
+  description:
+    en: 3D virtual try-on that combines two avatars while preserving the wearer's face and body shape, with diffusion-based repair of seams and appearance artifacts.
+    ja: 二つのアバターを組み合わせ、着用者の顔と体型を保つ3D仮想試着。拡散モデルで継ぎ目や外観の崩れを修復します。
+  links:
+    - label: Paper
+      url: https://openaccess.thecvf.com/content/CVPR2026F/html/Wang_AvatarMix_Identity-Preserving_Cross-Avatar_Composition_for_Outfit_Personalization_CVPRF_2026_paper.html
+    - label: Code
+      url: https://github.com/LarsPh/AvatarMix-Code
+    - label: Project
+      url: https://larsph.github.io/avatarmix/
+    - label: arXiv
+      url: https://arxiv.org/abs/2606.03506
+- id: eg-humannerf
+  kind: research
+  title: "EG-HumanNeRF: Efficient Generalizable Human NeRF Utilizing Human Prior for Sparse View"
+  venue: Computational Visual Media, 12(2), 355–379, 2026
+  image: /assets/img/publication_preview/eg-humannerf.gif
+  alt: Interactive novel-view rendering of a reconstructed person in EG-HumanNeRF.
+  url: https://doi.org/10.26599/CVM.2025.9450508
+  description:
+    en: Novel human views from three or four images, using a body prior and predicted geometry to reduce sampling, followed by occlusion-aware image refinement.
+    ja: 三、四枚の画像から人物の新視点画像を生成。人体モデルと予測した幾何情報でサンプリングを減らし、遮蔽を考慮した画像補正を行います。
+  links:
+    - label: Paper
+      url: https://doi.org/10.26599/CVM.2025.9450508
+    - label: Code
+      url: https://github.com/LarsPh/EG-HumanNeRF
+    - label: Video
+      url: https://github.com/LarsPh/EG-HumanNeRF/blob/main/docs/assets/gui-demo.mp4
+    - label: arXiv
+      url: https://arxiv.org/abs/2410.12242
+- id: adaptive-shells
+  kind: project
+  title: Open Adaptive Shells
+  image: /assets/img/projects/adaptive-shells.png
+  alt: A Khady scene rendered in the Open Adaptive Shells interactive viewer.
+  url: https://github.com/LarsPh/open-adaptive-shells
+  description:
+    en: A reimplementation of Adaptive Shells, from neural-field training and shell extraction to an interactive GPU renderer using OptiX and Dr.Jit.
+    ja: Adaptive Shellsの再現実装。ニューラル場の学習とシェル抽出から、OptiXとDr.Jitを用いた対話的なGPUレンダラーまで開発しました。
+  links:
+    - label: Code
+      url: https://github.com/LarsPh/open-adaptive-shells
+    - label: Video
+      url: https://github.com/LarsPh/open-adaptive-shells/blob/main/renderer/docs/media/viewer-demo.mp4
+    - label: Original paper
+      url: https://arxiv.org/abs/2311.10091
+- id: vol-lenia
+  kind: project
+  title: VolLenia Playground
+  image: /assets/img/projects/vol-lenia.png
+  alt: A gallery of 3D Lenia and Flow Lenia patterns shown with volume rendering.
+  url: https://github.com/LarsPh/VolLenia_Playground
+  description:
+    en: A playground for 3D artificial life, with a C++/CUDA simulator and volume renderer, plus PyTorch tools for parameter optimization and pattern search.
+    ja: 3D人工生命を探索する環境。C++とCUDAによるシミュレーションとボリューム描画に、PyTorchによるパラメータ最適化と形態探索を組み合わせています。
+  links:
+    - label: Code
+      url: https://github.com/LarsPh/VolLenia_Playground
+    - label: Video gallery
+      url: https://github.com/LarsPh/VolLenia_Playground/blob/main/docs/gallery.md
